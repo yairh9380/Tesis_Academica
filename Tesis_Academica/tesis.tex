@@ -1,0 +1,46 @@
+\documentclass[12pt,letterpaper]{report}
+
+% Paquetes básicos
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cite}
+\usepackage{hyperref}
+
+% Configuración de márgenes
+\usepackage[left=3cm,right=3cm,top=2.5cm,bottom=2.5cm]{geometry}
+
+% Configuración del documento
+\title{Título de la Tesis}
+\author{Tu Nombre}
+\date{\today}
+
+\begin{document}
+
+% Preliminares
+\input{portada}
+\input{preliminares/dedicatoria}
+\input{preliminares/agradecimientos}
+\input{preliminares/indice_general}
+
+% Resumen
+\input{resumen}
+
+% Capítulos
+\input{capitulos/1-Seleccion_Propuesta/1}
+\input{capitulos/2-Contenido_Propuesta/2}
+\input{capitulos/3-Metodologia_Trabajo/3}
+\input{capitulos/4-Asesor_Tesis/4}
+\input{capitulos/6-Actividades_Aprendizaje/6}
+
+% Bibliografía
+\bibliographystyle{plain}
+\bibliography{bibliografia/referencias}
+
+% Anexos
+\appendix
+\input{anexos/anexo-A}
+\input{anexos/anexo-B}
+
+\end{document}
